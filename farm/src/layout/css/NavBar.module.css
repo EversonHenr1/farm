@@ -1,0 +1,78 @@
+
+
+.nav{
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 6em;
+    flex-shrink: 1;
+    position: relative;
+    z-index: 1;
+    overflow: visible !important;
+    position: absolute;
+    width: 100%;
+    
+}
+.nav img{
+    margin-top: 70px;
+    width: 100px;
+
+}
+.hidden{
+   
+    background-color:transparent;
+    position: absolute;
+    bottom: -1px;
+    width: 100px;
+    height: 40px;
+    z-index:-1 ;
+    pointer-events: none;
+    
+}
+.nav a , .nav span{
+    font: var(--robotoS);
+    font-size: 1.1em;
+    text-decoration: none;
+    color:  var(--dark) ;
+    position: relative;
+    margin-top: 1em;
+    letter-spacing: 0.9px;
+    text-shadow: 1px 1px 0px #ffffffbd !important;
+}
+.nav a:after,.nav span::after{
+    transition: 0.25s ease-in-out;
+    content: " ";
+    position: absolute;
+    top: -120%;
+    left: 0;
+    height:10%;
+    width: 0;
+    background-color: transparent;
+    
+}
+.nav a:hover::after , .nav span:hover::after{
+    background-color: var(--dest1);
+   
+    width: 100%;
+    
+}
+.nav a:hover , .nav span:hover{
+  
+ color: var(--dest1);
+}
+.nav span{
+    cursor: pointer;
+    color: var(--dest1);
+}
+.nav > .containerLink{
+    display: flex;
+    gap: 0 5em;
+}
+.hamburgue{
+    display: none;
+}
+.nav>div:nth-child(2)>a::after{
+   display: none;
+}

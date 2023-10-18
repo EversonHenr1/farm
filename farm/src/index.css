@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* Fonts */
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{ 
+  /* Variaveis  de Cores*/
+  --dest1: #FF4500;
+  --dest2:#D92911;
+  --dif:#8C0707;
+  --comp:#E6E9F2;
+  --dark:rgba(0, 0, 0, 0.70);
+  --white:#F8F8F8;
+  /* Variaveis de Fontes */
+  --robotoS: 300 1em Roboto;
+  --robotoM: 400 1em Roboto;
+}
+
+h1{
+  color: #0D0D0D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 8em;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+h2{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2em;
+  font-weight: 500 !important;
+  line-height: normal;
+}
+h2 > span{
+  color: var(--dest2);
+}

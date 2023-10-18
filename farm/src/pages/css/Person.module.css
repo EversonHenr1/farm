@@ -1,0 +1,74 @@
+.perfilImage{
+    width: 190px;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    height: 230px;
+    border-left: 0.5em solid var(--comp);
+    margin-bottom: 2.5em;
+}
+.containerPerson{
+    padding: 2em ;
+    font-family: roboto;
+    font-weight: 200;
+    color: var(--comp);
+    
+}
+.containerPerson label{
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.containerPerson input{
+    background-color: transparent;
+    border: none;
+    padding: 0.2em 1em;
+    color: var(--comp);
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1.5em;
+    width: 430px;
+    text-align: center;
+}
+.containerPerson input:nth-child(1){
+    width: 480px;
+    font-size: 2.2em;   
+    font-weight: bolder;
+}
+.containerName{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerName > div{
+    display: flex;
+    align-items: center;
+}
+.containerCampus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em 0;
+}
+.containerPerson button{
+    margin-top: 2em;
+}
+.containerCampus >div{
+    display: flex;
+    align-items: center;
+}
+.containerPerson span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    width: 3px;
+    height: 30px;
+    transition: 0.4s ease-in-out;
+    background-color: var(--comp);
+}
+.containerPerson span:hover{
+    color: var(--dark);
+    width: 50px;
+}

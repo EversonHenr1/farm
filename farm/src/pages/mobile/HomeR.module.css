@@ -1,0 +1,116 @@
+@media  (max-width: 1024px) {
+    /* SECTION 1 */
+    .containerIntruR{
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .containerIntruR h1{
+        text-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.521) !important;
+    }
+    .containerIntruR h2{
+        text-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.445) !important;
+    }
+    .containerIntruR p{
+        margin: 2em 0;
+        color: #000;
+        text-shadow: 0.5px 0.5px 2px white !important;
+    }
+    /* SECTION2  */
+    .conatinerDescR{
+        flex-direction: column;
+        position: relative;
+    }
+    .conatinerDescR > div:first-child{
+        width: 100% !important; 
+        height: 100% !important;
+        background-color: transparent;
+        z-index: 1;
+        padding: 5em 1em;
+        border: none;
+    }
+    .conatinerDescR > div:last-child{
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+        display: flex;
+        justify-content: right;
+        flex-shrink: 0;
+        width: 100%;
+        border-top: 1em solid var(--dest1) !important;
+        border-bottom: 1em solid var(--dest1) !important;
+    }
+    .conatinerDescR > div:first-child  h2{
+        color: white !important;
+    }
+    .conatinerDescR > div:first-child p {
+        color: white !important;
+        text-shadow: 0.5px 0.5px 2px black !important;
+        font-weight: normal;
+    }
+    .conatinerDescR > div:first-child{
+        background-color: rgba(255, 255, 255, 0.267) !important;
+        margin-top: 5em;
+    }
+    .conatinerDescR > div:last-child >div{
+        position: absolute;
+        left: 0px;
+
+    }
+    .Rtriangulo{
+        display: none;
+    }
+    .conatinerDescR > div:last-child img{
+        position: relative;
+        
+    }
+    .waveR{
+        display: none;
+    }
+    /* SECTION 3 */
+    .RcontainerRecipes{
+        border: none;
+        
+    }
+    .RcontainerRecipes > h2{
+        width: 84%;
+    }
+    /* SECTION 4 */
+    .RcontainerDevs{
+        height: max-content;
+    }
+    .RcontainerDevs > div:first-child{
+        display: none;
+    }
+    .RcontainerDevs > div:nth-child(3){
+        height: max-content;
+        padding: 1em;
+    }
+    .RcontainerDevs > div:nth-child(3) > div{
+        background-color: transparent !important;
+    }
+    .RcontainerForm{
+        padding-top: 5em;
+    }
+    .RcontainerForm > form{
+        width: 100% !important;
+    }
+    .RcontainerForm > form > input[type="submit"]{
+        margin-top: 5em !important;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    /* SECTION 1 */
+    .containerIntruR  span{
+        display: none;
+    }
+    .containerIntruR{
+        right: 0px;
+    }
+    /* SECTION2  */
+
+}
