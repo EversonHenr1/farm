@@ -2,7 +2,8 @@ import { useState } from "react";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import styles from "./css/Person.module.css";
-import { FaArrowRight, FaEdit } from "react-icons/fa";
+import { FaArrowRight, FaCloud, FaEdit, FaSave, FaUpload } from "react-icons/fa";
+import { useRef } from "react";
 
 function Person({ name, email, password, alt, image, nav }) {
   const [nome, setNome] = useState(name);
@@ -12,14 +13,23 @@ function Person({ name, email, password, alt, image, nav }) {
   const [isEmailDisabled, setIsEmailDisabled] = useState(true);
   const [isPasswordDisabled, setIsPasswordDisabled] = useState(true);
 
+  const nomeInputRef = useRef(null)
+  const emailInputRef = useRef(null)
+  const passwordInputRef = useRef(null)
+
   const handleEditInput = (inputName) => {
     if (inputName === "nome") {
-      setIsNomeDisabled(false);
+      setIsNomeDisabled(!isNomeDisabled);
+      nomeInputRef.current.classList.toggle("focado")
     } else if (inputName === "email") {
-      setIsEmailDisabled(false);
+      setIsEmailDisabled(!isEmailDisabled);
+      emailInputRef.current.classList.toggle("focado")
+    
     } else if (inputName === "password") {
-      setIsPasswordDisabled(false);
-    }
+      setIsPasswordDisabled(!isPasswordDisabled);
+      passwordInputRef.current.classList.toggle("focado")  
+    }    
+    
   };
 
   const handleNomeChange = (e) => {
@@ -46,43 +56,50 @@ function Person({ name, email, password, alt, image, nav }) {
               name="namePerson"
               id="namePerson"
               onChange={handleNomeChange}
+              onBlur={(e)=> handleEditInput("nome")}
               disabled={isNomeDisabled}
+              ref={nomeInputRef}
             />
             <span>
-              <FaEdit onClick={() => handleEditInput("nome")} />
+              <FaEdit onClick={(e) => handleEditInput("nome")} />
             </span>
           </div>
         </div>
         <div className={`${styles.containerCampus}`}>
           <div>
-            <label htmlFor="emailPerson">email:</label>
+            <label htmlFor="emailPerson"></label>
             <input
               type="text"
               value={emailValue}
               name="emailPerson"
               id="emailPerson"
               onChange={handleEmailChange}
+              onBlur={(e)=> handleEditInput("email")}
               disabled={isEmailDisabled}
+              ref={emailInputRef}
             />
             <span>
-              <FaEdit onClick={() => handleEditInput("email")} />
+              <FaEdit onClick={(e) => handleEditInput("email")} />
             </span>
           </div>
           <div>
-            <label htmlFor="passwordPerson">senha:</label>
+            <label htmlFor="passwordPerson"></label>
             <input
               type="password"
               value={passwordValue}
               name="passwordPerson"
               id="passwordPerson"
+              onBlur={(e)=> handleEditInput("password")}
               onChange={handlePasswordChange}
               disabled={isPasswordDisabled}
+              ref={passwordInputRef}
             />
             <span>
-              <FaEdit onClick={() => handleEditInput("password")} />
+              <FaEdit onClick={(e) => handleEditInput("password")} />
             </span>
           </div>
-          <Button>Sair <FaArrowRight /></Button>
+          <Button>Salvar <FaUpload/></Button>
+          <Button>Logout <FaArrowRight /></Button>
         </div>
       </div>
     </Section>
