@@ -21,7 +21,7 @@
     width: 100%;
     background-color: #F8F8F8;
     display: flex;
-    justify-content: center;
+    
 }
 
 .desc{
@@ -59,6 +59,7 @@
     border-right: 5em solid var(--white);
    pointer-events: none;
 }
+
 
 /* Section 3 */
 

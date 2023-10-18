@@ -1,21 +1,24 @@
 .perfilImage{
-    width: 190px;
+    width:250px;
     border-top-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    height: 230px;
+    height:333px;
     border-left: 0.5em solid var(--comp);
     margin-bottom: 2.5em;
+      
 }
 .containerPerson{
     padding: 2em ;
     font-family: roboto;
     font-weight: 200;
     color: var(--comp);
+ 
     
 }
 .containerPerson label{
     font-weight: bolder;
     font-size: 1.1em;
+    margin-right: 0.5em
 }
 .containerPerson input{
     background-color: transparent;
@@ -27,7 +30,16 @@
     font-size: 1.5em;
     width: 430px;
     text-align: center;
+    transition: ease-in-out 0.4s;
+    
 }
+
+
+.containerPerson input:focus{
+    outline: none;
+   border: 1px solid white;
+}
+
 .containerPerson input:nth-child(1){
     width: 480px;
     font-size: 2.2em;   
@@ -35,14 +47,21 @@
 }
 .containerName{
     display: flex;
-    
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 2em;
+    margin-bottom: 3em;
 }
 .containerName > div{
     display: flex;
     align-items: center;
+}
+.containerName input[type="text"]{
+    font-weight: 700 !important;
+    letter-spacing: 1.6px ;
+    font-size: 2em;
 }
 .containerCampus{
     display: flex;
@@ -67,8 +86,17 @@
     height: 30px;
     transition: 0.4s ease-in-out;
     background-color: var(--comp);
+    margin-left: 1em;
 }
 .containerPerson span:hover{
     color: var(--dark);
     width: 50px;
+}
+.containerPerson Button:nth-child(3){
+    width: 100%;
+}
+
+.containerPerson Button:nth-child(4){
+    opacity: 0.7;
+   
 }

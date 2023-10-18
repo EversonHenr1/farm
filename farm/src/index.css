@@ -43,3 +43,30 @@ h2{
 h2 > span{
   color: var(--dest2);
 }
+.focado{
+ 
+  
+  animation: testandod 1.5s ease-in infinite;
+}
+.focado:focus{
+  animation: none;
+  border-bottom: 1px solid #f8f8f8f5;
+}
+
+@keyframes testandod {
+  0%{
+    border-bottom: 1px solid rgba(255, 255, 255, 0) ;
+  }
+  30%{
+    border-bottom: 1px solid #f8f8f86c;
+  }
+  60%{
+    border-bottom: 1px solid #f8f8f8f5;
+  }
+  80%{
+    border-bottom: 1px solid #f8f8f86c;
+  }
+  100%{
+    border-bottom: 1px solid rgba(255, 255, 255, 0) ;
+  }
+}
