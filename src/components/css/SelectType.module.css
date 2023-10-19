@@ -1,0 +1,31 @@
+.select{
+    text-align: center;
+    padding: 6.5px;
+    font-family: Roboto;
+    font-size: 1.08em;
+    width: 100%;
+    margin-top: 0.5em;
+    border: 1px solid var(--dark);
+    background-color:  rgba(255, 255, 255, 0.281);
+}
+.select::-webkit-scrollbar-thumb{
+    height: 10px;
+    width: 30px;
+    background-color: white;
+    border: 1px solid var(--dark);
+}
+.select::-webkit-scrollbar{
+    
+    background-color: var(--dark);
+}
+.selec:focus{
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.534) !important;
+}
+.select > option{
+    margin-bottom: 1em;
+    background-color: whitesmoke;
+}
+.label{
+     font-family: Roboto;
+    color: var(--dark);
+}
