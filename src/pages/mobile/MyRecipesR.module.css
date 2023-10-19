@@ -1,0 +1,6 @@
+
+@media (max-width: 1024px) {
+    .ContainerRecipeR{
+       min-width: 100vw !important;
+    }
+}

@@ -1,0 +1,21 @@
+.containerInfos > div> div{
+    gap: 1em 0;
+
+}
+.containerInfos label{
+    font-family: Roboto;
+    font-size: 1.1em;
+    color: var(--dark);
+}
+.containerInfos svg{
+    color: var(--dest1);
+    text-shadow: 4px 4px 4px var(--dark);
+    font-size: 2em;
+}
+.containerInfos select{
+    border: 0.5px solid var(--dark);
+    color: var(--dark);
+    border-radius: 1em ;
+    text-align: center;
+    padding: 0.2em 0.4em;
+}
