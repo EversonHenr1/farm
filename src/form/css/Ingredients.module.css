@@ -1,0 +1,92 @@
+.container_Ingred{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 420px;
+    margin: 20px 0px;
+    gap: 1.5em 0;
+    justify-content: left;
+    position: relative;
+    border-left: 3px solid  var(--dest1);
+    outline-offset: 50px;
+    padding: 50px 30px;
+}
+.container_Ingred >div> label,.quantContainer label{
+    font-family: Roboto;
+    color:var(--dest1);
+    font-size: 1.1em;
+    
+    text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.493);
+}
+.container_Ingred > h3{
+    color: var(--dest1);
+    font-family: Roboto;
+    text-align: center;
+    margin: 10px 0px;
+    text-shadow: 0.5px 0.5px 4px rgba(255, 255, 255, 0.493);
+    font-size: 1.25em;
+    text-transform: uppercase;
+    
+}
+.container_Ingred >div> input,.quantContainer input,.quantContainer select{
+    background-color:  rgba(255, 255, 255, 0.281);
+    border-radius: 1em;
+    margin-top: 0.5em;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.1em;
+    border: 1px solid var(--dark);
+    padding: 5px;
+    color: var(--dark);
+}
+.container_Ingred > div> input:focus,.quantContainer input:focus,.quantContainer select:focus{
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.548);
+    outline: none;
+}
+.container_Ingred >div>select{
+    font-size: 1.1em;
+    outline: none;
+    padding: 6.5px;
+    border-radius: 1em;
+    color: var(--dark);
+}
+.container_Ingred >div>select:focus{
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.548);
+}
+.ingredient{
+    width: 100% !important;
+}
+.quant{
+    width: 50px !important;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+}
+.quantContainer select{
+    font-size: 1.06em;
+    outline: none;
+    padding: 3px;
+    outline: none;  
+    text-align: center;
+}       
+
+.quantContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantContainer select::-webkit-scrollbar-thumb{
+    height: 10px;
+    width: 30px;
+    background-color: white;
+    border: 1px solid var(--dark);
+}
+.quantContainer select::-webkit-scrollbar{
+    
+    background-color: var(--dark);
+}
+.quantContainer select > option{
+    margin-bottom: 1em;
+    background-color: whitesmoke;
+}

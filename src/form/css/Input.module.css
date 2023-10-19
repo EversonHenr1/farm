@@ -1,0 +1,54 @@
+.container_input{
+    position: relative;
+    width: 80%;
+    height: 20px;
+    font: var(--robotoS);
+}
+.input{
+    border: none;
+    background-color: transparent;
+    font: var(--robotoS);
+    font-size: 1em;
+    border-bottom: 1.5px solid var(--dark);
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 1em;
+    transition: 0.5s ease-in-out;
+}
+.input:hover{
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+}
+.input:focus{
+    box-shadow: 0.5px 0.5px 1em 1em rgba(0, 0, 0, 0.068);
+}
+.input::placeholder{
+    text-align: center;
+}
+.container_input >label{
+    cursor: text;
+  color:rgba(0, 0, 0, 0.842);
+    position: absolute;  
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%,0);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.intGoogle::placeholder{
+    opacity: 0;
+}
+.google{
+    top: -25px !important; 
+    opacity: 1 !important; 
+    font-weight: 500 !important;
+    animation: showlabel 1s ease-in-out ;
+}
+@keyframes showlabel {
+    0%{
+        top: 0 !important;
+    }
+    100%{
+        top: -25px !important;
+    }
+}
