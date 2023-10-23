@@ -20,3 +20,8 @@
 .linear{
     background-image: linear-gradient(#FF4500 60%,#f8f8f8);
 }
+.backgroundContain{
+    background-position: top center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}

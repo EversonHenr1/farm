@@ -1,0 +1,8 @@
+.containerRecipes{
+    border: 1px solid black;
+    width: 60vw;
+    height: max-content;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
