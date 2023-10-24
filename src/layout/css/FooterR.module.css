@@ -1,0 +1,27 @@
+/* Breakpoint para tablets */
+@media  (max-width: 1024px) {
+    .footerR {
+      
+        padding-left: 8em;
+        padding-right: 8em;
+        flex-direction: column;
+    }
+    .footerR>div:first-child{
+        display: none;
+    }
+    .footerR ul>li{
+        padding: 0.5em;
+    }
+}
+
+/* Breakpoint para dispositivos móveis */
+@media (max-width: 768px) {
+    .footerR {
+      
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        flex-direction: column;
+    }
+  }
+  
+  
