@@ -1,0 +1,237 @@
+.borderShadow{
+    box-shadow: 30px 0px  0px var(--comp);
+    height: 100%;
+    width: 3em;
+    background-color: var(--dark) !important;
+    position: absolute;
+    top: 0;
+}
+.backgroundBanner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--dest1);
+    border-bottom: 10px solid var(--comp);
+}
+.containerMain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 9em;
+    gap: 0.5em 0;
+}
+.containerMain h1{
+    font-size: 4.3em;
+}
+.containerMain > div:nth-child(2){
+    margin-bottom: 3em;
+}
+.containerImage {
+   margin-top: -10rem;
+   margin-left: -2em;
+}
+.descC{
+    margin-top: 1.1em;
+     width: 100%;
+     display: flex;
+    justify-content: center;
+}
+.descC > p {
+    text-align: justify;
+    max-width: 700px;
+    font-family: roboto;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    font-size: 1.2em;
+}
+
+.containerImage > img{
+    width: 60vw;
+    height: 30rem;
+    border-right: 2em solid white;
+}
+.containerInfo,.containerLike{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content:  center;
+    gap: 0 2em;
+}
+.containerInfo   svg{
+color:var(--dest1);
+}
+.containerDesc{
+    display: flex;
+    padding: 6em;
+    height: 100vh;
+    justify-content: center;
+    gap: 0 8em;
+    flex-wrap: wrap;
+}
+.desc{
+    background-color: var(--comp);
+    font: var(--robotoS);
+    font-size: 1.7em;
+    line-height: 2em;
+    letter-spacing: 5px;
+    width: 40%;
+    height: min-content;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+
+.containePlus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 7em;
+    padding-bottom: 5em;
+}
+.containePlus > aside{
+    min-height: 20vh;
+    min-width: 500px;
+    padding: 1.5em;
+}
+.containePlus > aside  h2{
+    font-family: roboto !important;
+    font-weight: 300 !important;
+    font-size: 2em;
+}
+
+.procedimento {
+   display: flex;
+   flex-direction: column;
+   margin-top: 2em;
+   gap: 2em 0;
+}
+.procedimento > div{
+    position: relative;
+    background-color: white;
+    border-radius: 0.3em;
+    padding: 1em;
+    border-bottom: 3px solid var(--dest1);
+    overflow: hidden;
+    max-width: 600px;
+}
+.procedimento span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-family: roboto;
+    font-weight: 100;
+    font-size: 1.6em;
+    padding-left: 0.5em;
+    
+}
+.procedimento p{
+    max-width: 88%;
+    margin: auto;
+    text-align: justify;
+    font-family: roboto;
+    font-weight: 100;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    padding-left: 1em;
+}
+
+.ingrediente{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.ingrediente ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em 0;
+}
+.ingrediente li{
+    font-family: roboto;
+    font-size: 1.1em;
+    display: flex;
+    font-weight: 100;
+    background-color: white;
+    border-bottom: 3px solid var(--dest1);
+} 
+.ingrediente li p {
+    margin: auto;
+}
+.ingrediente li span{
+    color: white;
+    padding: 0.7em 1em;
+    background-color: var(--dest1);
+}
+.containerEX{
+    padding: 3em 0;
+
+}
+.containerEX button{
+    background-color: var(--dif);
+}
+.containerEdit input, .containerEdit textarea{
+    text-align: center;
+} 
+.containerEdit{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em 0;
+    padding: 5em  20em;
+}
+.containerEdit > h2{
+    color: var(--dest1);
+}
+.flexDicas{
+    display: flex;
+    padding: 2em 2em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flexDicas > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em 0;
+    flex-direction: column;
+}
+.flexDicas svg{
+    color: var(--dest1);
+    font-size: 2.5em;
+}
+.flexDicas  select{
+     border-radius: 12px !important; 
+}
+.imgRecipe{
+    background-color: var(--comp);
+    width: 480px;
+    height: 320px;
+}
+.containerLike  svg{
+    cursor: pointer;
+}
+.autor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-family: "Roboto";
+    font-weight: 200 !important;
+    color: #bdbaba9a;
+
+}

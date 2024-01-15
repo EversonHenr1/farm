@@ -1,0 +1,13 @@
+@media (max-width: 768px){
+    .containerLoginR{
+        min-width: 85vw!important;
+        height: 85vh;
+        overflow-y: auto;
+    }
+    .containerLoginR img{
+        display: none !important;
+    }
+    .containerLoginR > form{
+       padding-bottom: 2em ;
+    }
+}

@@ -1,0 +1,18 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1;   
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.vertical{
+    align-items: center;
+}
+.flex{
+    flex-direction: row !important;
+}

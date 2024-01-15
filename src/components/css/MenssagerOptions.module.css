@@ -1,0 +1,38 @@
+.containerMsg{
+    background-color: var(--white);
+    padding: 3em 2em;
+    width: 500px;
+    border-radius: 1em;
+    font-family: roboto;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.158);
+}
+.containerMsg > p{
+    text-align: center;
+}
+.containerMsg >h2{
+    margin-bottom: 1.5em;
+}
+.containerMsg  button{
+    margin-top: 2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: var(--comp);
+    padding: 1em 2em;
+    width: 45%;
+    border-radius: 1em;
+    transition: 0.4s ease-in-out;
+}
+.containerMsg  button:hover{
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.158);
+    transform: scale(0.9);
+}
+.containerMsg  button:nth-child(1){
+    background-color: rgb(248, 195, 195);
+}
+.containerMsg > div{
+    display: flex;
+    justify-content: center;
+    gap:0 1em;
+    flex-direction: row-reverse;
+}

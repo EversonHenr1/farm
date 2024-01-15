@@ -1,0 +1,28 @@
+.img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    
+    width: 250px;
+    height: 400px;
+    border: 1.5px solid var(--dark);
+    box-shadow: 1px 1px 1em 0.3em rgba(0, 0, 0, 0.137);
+    position: relative;
+}
+.img > a >button{
+    min-width: 70% !important;
+    height: 3em !important;
+    border-color: black;
+    box-shadow: 1px 1px 1em 0.3em rgba(0, 0, 0, 0.137);
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    font-size: .95em !important;
+    text-transform: none !important;
+    transform: translate(-50%,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 3px  ;
+}

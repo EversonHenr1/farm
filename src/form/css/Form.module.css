@@ -1,0 +1,103 @@
+.containerForm{
+    box-shadow: 0em 4em 1em rgb(0 0 0 / 25%);
+    width: 55vw;
+    min-height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em 0;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-top: none;
+    
+   
+}
+.containerForm > h2{
+    color: var(--dest1);
+    font-family: Roboto;
+    font-weight: 500 !important;
+    font-size: 2.3em;
+    margin-top:2em ;
+}
+
+.containerForm > form{
+    width: 90%;
+    min-height: 500px !important;
+    padding: 5.5em 2em;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    gap: 5.5em 0;
+    
+}
+.containerForm > form select:hover{ 
+    border-color: black !important; 
+}
+
+.containerForm > form  input[type="text"],.containerForm > form textarea{
+    border-color: var(--dark) !important;
+    border-radius: 0.3em;
+}
+.flexDicas{
+    display: flex;
+    padding: 2em 2em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flexDicas > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em 0;
+    flex-direction: column;
+}
+.flexDicas svg{
+    color: var(--dest1);
+    font-size: 2.5em;
+}
+.flexDicas  select{
+     border-radius: 12px !important; 
+}
+
+.containerForm  button{
+    border-radius: 12px;
+    width: 100% !important;
+}
+
+.containerForm  button:nth-child(0){
+    background-color: yellow !important;
+}
+.containerImagem{
+    position: relative;
+}
+.containerImagem > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.containerImagem > div > svg{
+    font-size: 2.3em;
+    width: 100%;
+    color: var(--dest1);
+    margin-bottom: 0.5em;
+}
+.containerImagem > div >p{
+    text-align: center;
+    font-size: 1em;
+    font-family: roboto;
+    width: 250px;
+    color: var(--dark);
+}
+
+.imgRecipe{
+    background-color: var(--comp);
+    width: 480px;
+    height: 320px;
+}

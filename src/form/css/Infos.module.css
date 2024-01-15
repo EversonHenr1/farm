@@ -1,0 +1,7 @@
+.infoContainer{
+    background-color: var(--comp);
+    padding: 0.6em 1em;
+    font: var(--robotoM);
+    font-size: 1.1em;
+    border-radius: 2em;
+}

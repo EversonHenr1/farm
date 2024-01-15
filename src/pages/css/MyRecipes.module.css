@@ -1,0 +1,131 @@
+.ContainerRecipe{
+
+    width: 80vw;
+    background-color: #F8F8F8;
+    border-radius: 1em;
+    box-shadow: 5px 16px 29px 7px rgba(0, 0, 0, 0.15);
+    padding: 5em;
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba(97, 103, 185, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.Fade{
+    z-index: 1 !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #f17b50 0.93%, rgba(248, 248, 248, 0.00) 100.93%);
+    
+}
+.ContainerRecipe{
+    margin: 7em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    row-gap: 5em;
+    gap: 5em 0 ;
+}
+.ContainerRecipe >div>img{
+    display: none;
+}
+.ContainerRecipe >div > div:nth-child(3)>span{
+    display: none;
+}
+.ContainerRecipe >div > div:nth-child(3)>div>p{
+    display: none;
+}
+/* .ContainerRecipe > div:nth-child(2){
+    background-color: #E7E9F2;
+}
+.ContainerRecipe > div:nth-child(2) > button{
+  color: rgba(240, 255, 255, 0) !important;
+  background-color: unset !important;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+.ContainerRecipe > div:nth-child(2)::after{
+    content: "Nova Receita";
+    font: var(--robotoM);
+    color: var(--dest1);
+    font-size: 1.5em !important;
+    position: absolute;
+    bottom: -1.5em;
+    left: 25%;
+    
+}
+.ContainerRecipe > div:nth-child(2) > button::after{
+    content: "+";
+    color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -200px;
+    pointer-events: all;
+    font-size: 5em;
+    font-family: Roboto;
+    font-weight: 100;
+    
+} */
+.ContainerRecipe {
+    padding: 2.5em;
+}
+.ContainerRecipe > div{
+    z-index: 1;
+    flex: 0 0 33.33%;
+}
+ .ContainerRecipe  h2{
+    color: var(--dest1);
+    z-index: 1;
+    flex: 0 0 100%;
+    
+} 
+
+.cardNew{
+    display: flex;
+    justify-content: center;
+  height: 100%;
+}
+.cardNew > div{
+    width: 250px;
+    height: 440px;
+    border: 1.5px solid var(--dark);
+    box-shadow: 1px 1px 1em 0.3em rgba(0, 0, 0, 0.137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    animation:  atencao infinite 2s  ;
+}
+@keyframes atencao {
+    50%{
+        border-color: var(--comp);
+    }
+    60%{
+        border-color: rgba(0, 0, 0, 0.137);
+    }
+}
+.cardNew > div:hover{
+    transform: scale(0.95);
+    box-shadow: 1px 1px 1em 0.5em rgba(0, 0, 0, 0.158);
+}
+.cardNew > div a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cardNew > div > span{
+    font-family: roboto;
+    font-weight: 100 !important;
+    
+}

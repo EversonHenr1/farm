@@ -1,0 +1,53 @@
+.containerRecipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerRecipes > img{
+    width: 70px;
+}
+
+.tittle{
+    color: var(--dest1) !important;
+    font: var(--robotoM);
+    cursor: pointer;
+    font-size: 1.3em;
+    text-align: center;
+}
+.tittle:hover{
+    text-decoration: underline 0.5px;
+}
+
+.containerRecipes .containerLines{
+    width: 300px;
+    margin-top: 0.5em;
+}
+.containerRecipes .containerLines > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font: var(--robotoS);
+    margin-top: 0.3em;
+    text-transform: lowercase;
+    gap: 0 0.5em;
+    color: rgba(0, 0, 0, 0.212);
+}
+.containerDesc{
+    animation: hidden 0.2s ease-in;
+}
+@keyframes hidden {
+    0%{
+        margin-top: -2em;
+    }
+}
+
+.containerDesc > p{
+    overflow-x: hidden;
+    font:var(--robotoS);
+    margin-top: 0.5em;
+    text-align: center;
+    line-height: 1.4em;
+    color: var(--dark) !important;
+    height: max-content;
+}

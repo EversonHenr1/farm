@@ -1,0 +1,22 @@
+.submit{
+  width: 70%;
+  height: 45px;
+  font: var(--robotoS);
+  cursor: pointer;
+  border: 1.5px solid white;
+  outline: none;
+  transition: 0.4s ease-in-out;
+}
+
+.darkred{
+  border-color: white;
+  color: white;
+  background-color: var(--dest2);
+}
+.darkred:hover{
+  transform: scale(0.97);
+  background-color: var(--dif);
+}
+
+
+

@@ -1,0 +1,109 @@
+.perfilImage{
+    width:250px;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    height:253px;
+    border-left: 0.5em solid var(--dest1);
+    margin-bottom: 2.5em;
+      
+}
+.containerPerson{
+    padding: 2em ;
+    font-family: roboto;
+    font-weight: 200;
+    color: var(--comp);
+ 
+    
+}
+.containerPerson label{
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-right: 0.5em
+}
+.containerPerson input{
+    border: none;
+    padding: 0.2em 1em;
+    color: var(--dark);
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1.5em;
+    min-width: 450px;
+    text-align: center;
+    transition: ease-in-out 0.4s;
+    
+}
+
+
+.containerPerson input:focus{
+    outline: none;
+   border: 1px solid white;
+   border-bottom:  1px solid var(--dest1);
+}
+
+.containerPerson input:nth-child(1){
+    width: 480px;
+    font-size: 2.2em;   
+    font-weight: bolder;
+}
+.containerName{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2em;
+    margin-bottom: 3em;
+}
+.containerName > div{
+    display: flex;
+    background-color: red;
+    min-width: 100px !important;
+    justify-content: center;
+    align-items: center;
+}
+.containerName input[type="text"]{
+    font-weight: 700 !important;
+    /* letter-spacing: 1.6px ; */
+    font-size: 2em;
+    text-align: center;
+    z-index: 0;
+}
+.containerCampus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em 0;
+}
+.containerPerson button{
+    margin-top: 2em;
+}
+.containerCampus >div{
+    display: flex;
+    align-items: center;
+   
+}
+.containerPerson span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    width: 3px;
+    height: 30px;
+    transition: 0.4s ease-in-out;
+    background-color: var(--dest1);
+    margin-left: 1em;
+   
+}
+.containerPerson span:hover{
+    color: var(--dark);
+    width: 50px;
+}
+.containerPerson Button:nth-child(3){
+    width: 100%;
+}
+
+.containerPerson Button:nth-child(5){
+    background-color: var(--dest2);
+   
+}

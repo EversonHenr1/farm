@@ -1,0 +1,48 @@
+.containerProcesso{
+   width: 85%;
+   min-height: 10em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2em 0;
+   position: relative;
+}
+
+.containerProcesso > h3{
+    color: var(--dest1);
+    font-family: Roboto;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+}
+.containerProcesso >span{
+    position: absolute;
+    
+    width: min-content;
+    text-align: center;
+   padding: 0.5em 0.8em;
+    font-size: 1em;
+    font-family: Roboto;
+    border: 1px solid var(--dark);
+    cursor: pointer;
+    color: var(--dark);
+border-radius: 12px;
+}
+.containerProcesso >span:nth-child(3){
+    right: -1em;
+    top: 40%;
+}
+.containerProcesso >span:nth-child(4){
+    right: -1em;
+    top: 80%;
+}
+.containerProcesso >span:nth-child(3):hover{
+    color: black;
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+    background-color: rgb(247, 187, 176);
+}
+.containerProcesso >span:nth-child(4):hover{
+    color: black;
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+    background-color: rgb(188, 247, 176);
+}

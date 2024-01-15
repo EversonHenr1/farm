@@ -1,0 +1,22 @@
+.containerFilter{
+    width: 80vw;
+    height: 4.5em;
+    background-color: var(--white);
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em;
+    font-size: 1em !important;
+    font: var(--robotoS);
+    z-index: 1;
+    
+}
+.barFilter{
+    background-color: var(--white);
+    height: 200px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 20%;
+}

@@ -1,0 +1,60 @@
+.btn{
+    min-width: 15em;
+    max-width: 18em;
+    height: 3.5em;
+    cursor: pointer;
+    color: var(--dark);
+    border: 1px solid white;
+    font: var(--robotoM);
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    transition: 0.4s ease-in-out;
+    background-color: var(--dest1);
+    color: white !important;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn:hover{
+    color: var(--dark) !important;
+    border: 1px solid var(--dark);
+    background-color: transparent;
+}
+
+.btnLine{
+    background-color: transparent;
+    color: var(--dest2) !important;
+    border: none !important;
+    z-index: 2 !important;
+}
+.btnLine:hover{
+    color: white !important;
+}
+.btnLine:hover::before{
+    height: 100%;
+}
+.btnLine::before{
+   
+    content: "";
+    width: 100%;
+    transition: 0.4s ease-in-out;
+    height: 0%;
+    background-color:var(--dest2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid var(--dest2) !important;
+    z-index: -1 !important;
+}
+
+.aLink{
+    width: min-content;
+    margin: auto;
+    text-decoration: none;
+}
+.submit{
+    background-color: var(--dest2) !important;
+    width: 80% !important;
+
+}

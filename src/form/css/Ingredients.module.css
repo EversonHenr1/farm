@@ -1,0 +1,63 @@
+.container_Ingred{
+    width: 100%;
+    display: flex;
+    gap: 2em  0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 2em ;
+
+}
+.container_Ingred > div{
+    width: 100%;
+    display: flex;
+    gap: 0 1em ;
+    justify-content: center;
+    position: relative;
+}
+.container_Ingred > div > p{
+    position: absolute;
+    bottom: -1.5em;
+    right: 5%;
+    font-family: roboto;
+
+}
+.container_Ingred > div  input{
+   
+    text-align: center !important;
+}
+.container_Ingred select{
+    width: 1500px;
+    border: none !important;
+    padding-left: 1.5em !important;
+    border-bottom: 1px solid var(--dark) !important;
+      
+}
+
+.container_Ingred > h3{
+    color: var(--dest1);
+    font-family: Roboto;
+    text-align: center;
+    font-size: 1.25em;
+}
+.container_Ingred span{
+    width: min-content;
+    text-align: center;
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    font-family: Roboto;
+    border: 1px solid var(--dark);
+    cursor: pointer;
+    color: var(--dark);
+    border-radius: 12px;
+}
+
+.container_Ingred span:hover:nth-child(2) {
+   color: black;
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+    background-color: rgb(188, 247, 176);
+}
+.container_Ingred span:hover:nth-child(1) { 
+    color: black;
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+    background-color: rgb(247, 187, 176);
+}

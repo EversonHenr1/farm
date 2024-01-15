@@ -1,0 +1,14 @@
+.containerLines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 0 2em;
+}
+.lines{
+    display: block;
+    min-width: 10%;
+    max-width: 30%;
+    height: 1px;
+    background-color: var(--dark);
+}

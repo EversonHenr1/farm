@@ -1,0 +1,74 @@
+.containerLogin{
+    background-color: rgba(248, 248, 248, 0.59);
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.171);
+    min-width: 400px;
+    max-width: 250px;
+    height: 469px;
+    position: relative;
+}
+.containerLogin img{
+    position: absolute;
+    top: -60px;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 108px;
+}
+.containerLogin >div{
+    position: absolute !important;
+    pointer-events: all;
+    z-index: 2;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%,0);
+    border: 1.5px solid white;
+}
+.containerLogin >div:hover{
+    border: 1.5px solid var(--dest2);
+}
+.containerLogin > h2{
+    color: var(--dest2);
+    font-weight: 400 !important;
+    margin: 1.5em 0;
+}
+.containerLogin >form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.2em 0;
+}
+.containerLogin >form >div> span{
+    color: var(--dest2);
+    font: var(--robotoS);
+    font-size: 1.1em;
+    opacity: 0.7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.containerLogin >form >div> span:hover{
+    opacity: 1;
+}
+@keyframes hidden {
+    0%{
+        transform: rotateY(-90deg); /* Exemplo de transformação 3D */
+        transform-origin: center;
+        transition: transform 0.5s;
+    }
+}
+@keyframes show {
+        0%{
+            transform: rotateY(90deg); /* Exemplo de transformação 3D */
+            transform-origin: center;
+            transition: transform 0.5s;
+        }
+    }
+.hidden{
+    animation: hidden 0.5s ease-in-out;
+    height: 99vh;
+}
+.hidden img{
+    display: none !important;
+}
+.show{
+    animation:show 0.5s ease-in-out;
+    
+}

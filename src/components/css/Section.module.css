@@ -1,0 +1,38 @@
+.section{
+    background-position: center center;
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.linear{
+    background-image: linear-gradient(#FF4500 60%,#f8f8f8);
+}
+.backgroundContain{
+    background-position: top center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.backgroundContainS{
+    background-position: top center !important;
+    background-size: contain !important;
+    background-color:whitesmoke;
+}
+.linear2{
+    
+    background: rgb(228,232,236);
+background: linear-gradient(0deg, rgba(228,232,236,1) 18%, rgba(255,69,0,0.38699229691876746) 53%, rgba(228,232,236,1) 89%);
+
+}

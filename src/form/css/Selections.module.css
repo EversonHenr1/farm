@@ -1,0 +1,18 @@
+.selection{
+    padding: 0.3em 0.5em;
+    border-color:  var(--dark);
+    border-radius: 0  !important;
+    text-align: center;
+    color: #8B8B8B !important;
+    font-weight: 200 !important;
+    font-size: 1em;
+    background-color: transparent;
+}
+.selection:hover{
+    border-color: black;
+}
+.selection:focus{
+    outline: none !important;
+    box-shadow: 0.5px 0.5px 0.5em 0.5em rgba(0, 0, 0, 0.068);
+}
+
